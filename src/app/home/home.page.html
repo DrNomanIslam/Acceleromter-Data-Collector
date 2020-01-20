@@ -1,14 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-img src="assets/banner.png"></ion-img>
+<ion-content align="center">
+  <ion-card>
+    <ion-card-content>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+      <p align="center">
+        {{x}} <br> {{y}} <br> {{z}}
+      </p>
+      <ion-input  [(ngModel)]="fn" placeholder="File Name"></ion-input>
+      <ion-input  [(ngModel)]="frequency" placeholder="frequency" type="number"></ion-input>
+      <ion-button expand="full" (click)="start()" shape="round" fill="outline">Start</ion-button>
+      <br>
+      <ion-button expand="full" (click)="stop()" shape="round" fill="outline">Stop</ion-button>
+      <p align="center">
+        {{msg}}
+      </p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
